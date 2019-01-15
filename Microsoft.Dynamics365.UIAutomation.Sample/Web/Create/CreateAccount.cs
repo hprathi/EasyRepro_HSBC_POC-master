@@ -35,7 +35,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Sample.Web
                 xrmBrowser.CommandBar.ClickCommand("New");
 
                 xrmBrowser.ThinkTime(5000);
-                xrmBrowser.Entity.SetValue("name", "Test API Account HSBC");
+                xrmBrowser.Entity.SetValue("name", "Wipro Account" + DateTime.Today.ToLongTimeString());
                 xrmBrowser.Entity.SetValue("telephone1", "555-555-5555");
                 xrmBrowser.Entity.SetValue("websiteurl", "https://easyrepro.crm.dynamics.com");
 
